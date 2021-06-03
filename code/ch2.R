@@ -1,7 +1,8 @@
 library(shiny)
 
-# <section>.<exercise #>
-# 2.1 ----
+
+# 2.2 Inputs ----
+# 1
 ui <- fluidPage(
   textInput("name", "", placeholder = "Your name")
 )
@@ -12,7 +13,7 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 
-# 2.2 ----
+# 2
 ui <- fluidPage(
   sliderInput("date", "When should we deliver?", 
               min = as.Date("2020-09-16"),
@@ -26,7 +27,7 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 
-# 2.3 ----
+# 3
 ui <- fluidPage(
   sliderInput("value", "", 
               min = 0,
@@ -42,7 +43,7 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 
 
-# 2.4 ----
+# 4
 ui <- fluidPage(
   selectInput("state", "Choose a state", 
               choices = split(datasets::state.name, 
@@ -57,3 +58,7 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
+# 2.3 Outputs ----
+
+

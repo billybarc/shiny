@@ -108,3 +108,10 @@ shinyApp(ui, server)
 # to avoid possibly confusing names. The server function environment
 # appears to take precedence, not sure how you'd specify
 # that you actually want the var() or range() functions.
+
+# No more exercises for rest of chapter. Cool content
+# on how reactive()s can help you update once and reuse 
+# updated variables, reactiveTimer() and eventReactive()
+# to hone in on when reactive()s are updated, and 
+# observers for reactive triggers that run code
+# but don't update UI output elements.
